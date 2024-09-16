@@ -1,8 +1,9 @@
-import Auth from "./auth"
+import Connect from "./connect"
 import Logo from "./logo"
 import Menu from "./menu"
 import Options from "./options"
 import Search from "./search"
+import CreateAccount from "./createaccount"
 
 const Navbar = () => {
   return (
@@ -15,8 +16,9 @@ const Navbar = () => {
    <div className="">
     <Search/>
    </div>
-   <div className="">
-    <Auth/>
+   <div className="flex items-center justify-center space-x-5">
+    <Connect/>
+    <CreateAccount/>
    </div>
    </nav>
   )
