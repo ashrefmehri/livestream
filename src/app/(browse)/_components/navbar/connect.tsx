@@ -7,7 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
+import ConnectForm from "../connect/connectForm"
 const connect = () => {
   return (
     <>
@@ -29,22 +29,7 @@ const connect = () => {
         Sign in with Facebook
       </Button>
     </div>
-    <div className="flex flex-col justify-center mt-2">
-      <span className="font-semibold text-sm ">Username</span>
-      <Input type="text" className="border-[#777779] rounded mt-1 focus:border-purple-500 focus:outline-none"></Input>
-    </div>
-    <div className="flex flex-col justify-center mt-2">
-      <span className="font-semibold text-sm ">Password</span>
-      <Input className="border-[#777779] rounded mt-1 focus:border-purple-500 focus:outline-none" type="password"></Input>
-      <a href="#" className="text-purple-500 underline text-[12px] mt-1 hover:text-primary">
-        Forgot your password?
-      </a>
-    </div>
-    <div className="flex justify-center mt-4">
-      <Button  className="w-full rounded text-white bg-[#4a4a4d] hover:bg-purple-600">
-        Connect
-      </Button>
-    </div>
+      <ConnectForm/>
     <DialogDescription className="text-center mt-2">
       Don't have an account? 
       <a href="#" className="text-purple-500 underline  hover:text-primary">Sign up now</a>
